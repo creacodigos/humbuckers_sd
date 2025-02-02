@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  scraper:
+    build: .
+    volumes:
+      - .:/app
+    command: ["sh", "-c", "npm install && node scraper.js"]
